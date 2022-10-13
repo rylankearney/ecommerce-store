@@ -1,0 +1,39 @@
+@use "./variables";
+
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(/*$color:*/ variables.$primary, /*$alpha:*/ 0.08);
+    background-color: variables.$solid-white;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .cart-flex {
+        display: flex;
+        align-items: center;
+        p {
+            margin-bottom: 0;
+            width: 24px;
+            height: 24px;
+            background-color: variables.$primary;
+            color: variables.$solid-white;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 1.1;
+        }
+        .menu-icon,
+        .bag-icon {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+//to do: make functional slide out nav
+.slide-out-nav {
+    display: none;
+}
