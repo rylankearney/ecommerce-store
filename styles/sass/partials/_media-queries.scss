@@ -1,0 +1,32 @@
+@use "./variables";
+
+@media screen and (max-width: 1000px) {
+    header {
+        .header-content-container {
+            padding: 0 50px;
+        }
+        h3 {
+            font-size: 2.4rem;
+        }
+    }
+  }
+  
+  @media (max-width: 800px) {
+    /* all of our styles for TABLET devices will go within this breakpoint */
+    header {
+        flex-direction: column;
+        .header-img-container {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+        .header-content-container {
+            width: 65%;
+        }
+    }
+  }
+  
+  @media (max-width: 500px) {
+    /* all of our styles for MOBILE devices will go within this breakpoint */
+  }
